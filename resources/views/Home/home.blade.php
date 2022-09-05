@@ -14,7 +14,8 @@
         <input type='submit' value='Send'><br/><br/>
     </form>
 @else
-    Hello, {{session('user_name')}} <br />
+    <strong>Hello, {{$userName}}</strong><br /><br />
+    <a href="/text"> View the text </a>
 @endif
 
 </body>

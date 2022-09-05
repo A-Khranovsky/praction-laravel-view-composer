@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\View\Composers\UserNameComposer;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+//        View::composer('Home.home', UserNameComposer::class);
+//        View::composer('Home.text', UserNameComposer::class);
+        View::composer('*', UserNameComposer::class);
     }
 }
