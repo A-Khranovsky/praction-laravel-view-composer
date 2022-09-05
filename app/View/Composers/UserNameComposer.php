@@ -10,7 +10,7 @@ class UserNameComposer
 
     public function __construct()
     {
-        if(session('user_name')){
+        if (session('user_name')) {
             $this->userName = session('user_name');
         }
     }
