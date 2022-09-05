@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
     {
 //        View::composer('Home.home', UserNameComposer::class);
 //        View::composer('Home.text', UserNameComposer::class);
-        //View::composer('*', UserNameComposer::class);
+//        View::composer('*', UserNameComposer::class);
         View::composer([
             'Home.home',
             'Home.text'
